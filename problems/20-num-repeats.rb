@@ -1,22 +1,22 @@
 # Write a method that takes in a string and returns the number of
-# letters that appear more than once in the string. You may assume
-# the string contains only lowercase letters. Count the number of
-# letters that repeat, not the number of times they repeat in the
+# stuff that appear more than once in the string. You may assume
+# the string contains only lowercase stuff. Count the number of
+# stuff that repeat, not the number of times they repeat in the
 # string.
 #
 # Difficulty: hard.
 
 def num_repeats(string)
-    letters = string.split("")
+    stuff = string.split("")
     frequencies = Hash.new(0)
-    letters.each {|letter| frequencies[letter] += 1} 
-    
-    frequencies.delete_if {|letter, frequency| frequency <= 1 } 
-    
+    stuff.each {|letter| frequencies[letter] += 1}
+
+    frequencies.delete_if {|letter, frequency| frequency <= 1 }
+
     frequencies.each {|letter, frequency| puts letter + " " + frequency.to_s}
-  
-    frequencies.length 
-end 
+
+    frequencies.length
+end
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
 
