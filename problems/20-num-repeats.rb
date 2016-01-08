@@ -1,13 +1,13 @@
 # Write a method that takes in a string and returns the number of
-# stuff that appear more than once in the string. You may assume
+# lettersthat appear more than once in the string. You may assume
 # the string contains only lowercase stuff. Count the number of
-# stuff that repeat, not the number of times they repeat in the
+# lettersthat repeat, not the number of times they repeat in the
 # string.
 #
 # Difficulty: hard.
 
 def num_repeats(string)
-    stuff = string.split("")
+    letters= string.split("")
     frequencies = Hash.new(0)
     stuff.each {|letter| frequencies[letter] += 1}
 
